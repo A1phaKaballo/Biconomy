@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pingpong-app-service
+spec:
+  type: CluserIP
+  selector:
+   environment: test
+   app: pingpong-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

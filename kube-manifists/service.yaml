@@ -3,7 +3,9 @@ kind: Service
 metadata:
   name: pingpong-app-service
 spec:
+<<<<<<< HEAD
   type: NodePort
+=======5
   selector:
    environment: test
    app: pingpong-app

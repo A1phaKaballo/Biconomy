@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: pingpong-app-service
 spec:
-  type: CluserIP
+  type: NodePort
   selector:
    environment: test
    app: pingpong-app

@@ -19,7 +19,10 @@ spec:
     spec:
       containers:
       - name: pingpong-app
-        image: IMAG_Registry/IMAGE:TAG
+        image: ahmedkaballo/nodejs-test:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+      - name: biconomy
+
